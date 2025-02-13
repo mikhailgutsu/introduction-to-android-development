@@ -64,7 +64,7 @@ fun index(){
     //<-----------------------------------------------------------------    LIST
     val userMap = mapOf("name" to "Alex", "age" to 23)
     val mutableMap = mutableMapOf("name" to "Alex")
-    mutableMap["age"] = 23
+    //mutableMap["age"] = 23
     //<-----------------------------------------------------------------    END
 
     //<-----------------------------------------------------------------    Cycle
@@ -98,48 +98,48 @@ fun index(){
     //<-----------------------------------------------------------------    NULL-safetyEND
 
     //<-----------------------------------------------------------------    Coroutines
-    import kotlinx.coroutines.*
+    //import kotlinx.coroutines.*
 
-    fun main() {
-        GlobalScope.launch {
-            delay(1000L)
-            println("Hello from coroutine!")
-        }
-        println("Hello from main thread!")
-        Thread.sleep(2000L) // Ждем, чтобы корутина успела выполниться
-    }
+//    fun main() {
+//        //GlobalScope.launch {
+//            //delay(1000L)
+//            println("Hello from coroutine!")
+//        }
+//        println("Hello from main thread!")
+//        Thread.sleep(2000L) // Ждем, чтобы корутина успела выполниться
+//    }
     //<-----------------------------------------------------------------    Coroutines END
 
     //<-----------------------------------------------------------------    WithAndroid
-    //Создание Activity
-    class MainActivity : AppCompatActivity() {
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
-        }
-    }
-    //Нахождение View и обработка кликов
-
-    val button: Button = findViewById(R.id.myButton)
-    button.setOnClickListener {
-        Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show()
-    }
-    //Запуск новой Activity
-
-    val intent = Intent(this, SecondActivity::class.java)
-    startActivity(intent)
-    //<-----------------------------------------------------------------    WithAndroid END
-
-    //<-----------------------------------------------------------------    Jetpack Compose (современный UI-фреймворк)
-    @Composable
-    fun Greeting(name: String) {
-        Text(text = "Hello, $name!")
-    }
-
-    @Preview
-    @Composable
-    fun PreviewGreeting() {
-        Greeting("Alex")
-    }
-    //<-----------------------------------------------------------------    Jetpack Compose (современный UI-фреймворк) END
+//    //Создание Activity
+//    class MainActivity : AppCompatActivity() {
+//        override fun onCreate(savedInstanceState: Bundle?) {
+//            super.onCreate(savedInstanceState)
+//            setContentView(R.layout.activity_main)
+//        }
+//    }
+//    //Нахождение View и обработка кликов
+//
+//    val button: Button = findViewById(R.id.myButton)
+//    button.setOnClickListener {
+//        Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show()
+//    }
+//    //Запуск новой Activity
+//
+//    val intent = Intent(this, SecondActivity::class.java)
+//    startActivity(intent)
+//    //<-----------------------------------------------------------------    WithAndroid END
+//
+//    //<-----------------------------------------------------------------    Jetpack Compose (современный UI-фреймворк)
+//    @Composable
+//    fun Greeting(name: String) {
+//        Text(text = "Hello, $name!")
+//    }
+//
+//    @Preview
+//    @Composable
+//    fun PreviewGreeting() {
+//        Greeting("Alex")
+//    }
+//    //<-----------------------------------------------------------------    Jetpack Compose (современный UI-фреймворк) END
 }
