@@ -1,0 +1,13 @@
+
+Feature                         	Interface	                    Abstract Class
+
+State (Properties with values)	    ❌ Not allowed	                ✅ Allowed
+Multiple Inheritance	            ✅ Yes (multiple interfaces)	❌ No (single class)
+Constructor	                        ❌ Not allowed	                ✅ Allowed
+Default Method Implementation	    ✅ Yes	                        ✅ Yes
+Abstract Methods	                ✅ Yes	                        ✅ Yes
+
+
+Use interfaces when you need to define behavior without state (e.g., Flyable, Driveable).
+Use abstract classes when you need partial implementations and state.
+
