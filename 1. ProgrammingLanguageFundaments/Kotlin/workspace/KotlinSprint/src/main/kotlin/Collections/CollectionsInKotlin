@@ -1,0 +1,7 @@
+1. Collections in Kotlin
+
+Kotlin has two main types of collections:
+
+    Immutable collections (listOf, setOf, mapOf) – cannot be modified after creation.
+
+    Mutable collections (mutableListOf, mutableSetOf, mutableMapOf) – allow modifications.
