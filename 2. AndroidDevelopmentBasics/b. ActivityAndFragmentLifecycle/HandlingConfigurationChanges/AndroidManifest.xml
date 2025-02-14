@@ -1,0 +1,7 @@
+<activity
+    android:name=".MainActivity"
+    android:configChanges="orientation|screenSize"/>
+	
+	Prevent Activity Restart
+	
+	This prevents Android from recreating the Activity on rotation.
