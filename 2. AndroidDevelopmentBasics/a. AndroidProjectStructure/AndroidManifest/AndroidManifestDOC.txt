@@ -1,0 +1,48 @@
+Key Components of the Manifest
+
+1. <manifest>
+Declares the package name and includes all app-related configurations.
+
+2. <uses-permission>
+Requests permissions required by the app, e.g., Internet, Camera, Location.
+
+3. <uses-sdk>
+Specifies the minimum SDK (minSdkVersion) and target SDK (targetSdkVersion).
+
+4. <application>
+Defines the main application settings:
+Icon and label
+Theme
+Backup settings
+RTL (Right-To-Left) support
+
+5. <activity>
+Declares activities in the app.
+The MainActivity is the launcher activity, marked with:
+<intent-filter>
+    <action android:name="android.intent.action.MAIN" />
+    <category android:name="android.intent.category.LAUNCHER" />
+</intent-filter>
+This makes it appear as the entry point when launching the app.
+
+6. <service>
+Declares background services (e.g., for playing music in the background).
+
+<service android:name=".MyService"/>
+
+7. <receiver>
+Defines broadcast receivers to handle system-wide events.
+
+<receiver android:name=".MyReceiver">
+    <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+    </intent-filter>
+</receiver>
+
+8. <provider>
+Registers content providers for managing shared data.
+
+<provider
+    android:name=".MyContentProvider"
+    android:authorities="com.example.provider"
+    android:exported="false"/>

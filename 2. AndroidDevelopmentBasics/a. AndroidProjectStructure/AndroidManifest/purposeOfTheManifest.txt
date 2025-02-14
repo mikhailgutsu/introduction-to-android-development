@@ -1,0 +1,9 @@
+Purpose of the Manifest
+
+	Defines essential application details such as:
+
+	Package name
+	Activities, services, broadcast receivers, and content providers
+	Permissions required by the app
+	Hardware and software features used
+	App's launcher activity

@@ -1,0 +1,8 @@
+Important Folders and Files
+
+app/ → Contains the main application code and resources.
+src/ → Contains source code, tests, and resources.
+res/ → Stores drawable assets, layouts, values (strings, colors, styles).
+AndroidManifest.xml → The core configuration file (explained in detail below).
+build.gradle (Module-Level & Project-Level) → Used for dependency management, compile settings.
+gradlew & gradlew.bat → Scripts for running Gradle commands.
