@@ -1,0 +1,8 @@
+Android supports resource qualifiers to provide alternative resources for different screen sizes, orientations, and languages.
+
+Examples:
+
+res/layout-land/ → Layouts for landscape mode.
+res/values-es/ → Strings for Spanish locale.
+res/drawable-hdpi/ → Images for high-density screens.
+res/values-night/ → Colors and styles for dark mode.

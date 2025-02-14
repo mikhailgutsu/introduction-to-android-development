@@ -1,0 +1,1 @@
+Contains XML files that define UI elements for activities and fragments.

@@ -1,0 +1,5 @@
+Used for images, icons, and custom graphics.
+
+Supported Image Formats
+PNG, JPG, GIF → Raster images
+SVG (VectorDrawable) → Scalable vector graphics (preferred for UI elements)

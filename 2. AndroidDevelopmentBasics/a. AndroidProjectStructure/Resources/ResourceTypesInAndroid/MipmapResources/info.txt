@@ -1,0 +1,7 @@
+Used for app launcher icons. Each density has its own folder:
+
+res/mipmap-mdpi/     # 48x48 px
+res/mipmap-hdpi/     # 72x72 px
+res/mipmap-xhdpi/    # 96x96 px
+res/mipmap-xxhdpi/   # 144x144 px
+res/mipmap-xxxhdpi/  # 192x192 px

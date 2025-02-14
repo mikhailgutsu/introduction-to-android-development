@@ -1,0 +1,1 @@
+Stores XML animation files for view animations.

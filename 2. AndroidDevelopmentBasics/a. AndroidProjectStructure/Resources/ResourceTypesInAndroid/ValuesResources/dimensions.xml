@@ -1,0 +1,10 @@
+Dimensions (res/values/dimens.xml)
+	Stores sizes (dp, sp, px, pt, mm, in).
+
+<resources>
+    <dimen name="padding_large">16dp</dimen>
+</resources>
+
+Usage
+<TextView
+    android:padding="@dimen/padding_large"/>

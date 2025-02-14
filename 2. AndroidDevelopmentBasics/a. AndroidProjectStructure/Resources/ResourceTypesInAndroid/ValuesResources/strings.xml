@@ -1,0 +1,14 @@
+1. Strings (res/values/strings.xml)
+	Keeps all text values for localization.
+
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="hello_world">Hello, World!</string>
+</resources>
+
+Usage in XML
+<TextView
+    android:text="@string/hello_world"/>
+	
+Usage in Java/Kotlin
+	val text = getString(R.string.hello_world)

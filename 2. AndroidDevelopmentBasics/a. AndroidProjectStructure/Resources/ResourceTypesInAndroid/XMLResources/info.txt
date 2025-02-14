@@ -1,0 +1,1 @@
+Stores custom XML configurations (e.g., network security config, preference settings).
