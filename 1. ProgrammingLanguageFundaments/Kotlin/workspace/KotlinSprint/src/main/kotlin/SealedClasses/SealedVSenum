@@ -1,0 +1,23 @@
+Feature	                        Sealed Class	        Enum
+
+Can hold data	                ✅ Yes (subclasses)	    ❌ No
+Can have methods	            ✅ Yes	                ✅ Yes (but limited)
+Inheritance	                    ✅ Yes	                ❌ No
+Open for extension	            ✅ Yes (new subclasses)	❌ No (fixed values)
+Used for complex hierarchies	✅ Yes	                ❌ No
+
+EXEMPLE:
+ENUM LIMITATION:
+    enum class NetworkState {
+        LOADING, SUCCESS, ERROR  // No way to store extra data
+    }
+
+SEALED CLASS ADVANTAGE:
+    sealed class NetworkState {
+        object Loading : NetworkState()
+        class Success(val data: String) : NetworkState()
+        class Error(val message: String) : NetworkState()
+    }
+
+With sealed class, Success and Error can hold data.
+enum is good for simple cases (e.g., LOADING, SUCCESS, ERROR without extra data).
