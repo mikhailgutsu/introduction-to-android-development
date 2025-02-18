@@ -1,5 +1,6 @@
 // Our Component are in com.test package
 package com.test
+import  com.test.welcome.WelcomeScreen
 
 // Need from transmit data on Activity creation (save the status)
 import android.os.Bundle
@@ -13,36 +14,9 @@ import androidx.appcompat.app.AppCompatActivity
  *  : AppCompatActivity() inheritance from AppCompatActivity for use all possibility of android-interface
  */
 class MainActivity : AppCompatActivity() {
-    /*
-     *  override fun onCreate(...) redeclare the onCreate method which calls on Activity init
-     *  savedInstanceState: Bundle? - sends the actual status of application if app-restarts
-     */
     override fun onCreate(savedInstanceState: Bundle?) {
-        /*
-         *  calls parent-method onCreate from AppCompatActivity for correct application initialization
-         */
         super.onCreate(savedInstanceState)
 
-        /*
-         *  TextView(this) - create the text-area TextView
-         *  this - sends actual Context (MainActivity) for TextView
-         */
-        val textView = TextView(this)
-        /*
-         *  Set-Up the "Frenki!" for output on interface
-         */
-        textView.text = "Frenki!"
-        /*
-         *  textSize = 24f for font-size, 24 (size) , f - float
-         */
-        textView.textSize = 24f
-        /*
-         *  setPadding(left, top, right, bottom) - padding-inside (in px)
-         */
-        textView.setPadding(50, 50, 50, 50)
-        /*
-         *  setContentView(...) - set the textView as main UI component of interface
-         */
-        setContentView(textView)
+        setContentView(WelcomeScreen(this))
     }
 }
